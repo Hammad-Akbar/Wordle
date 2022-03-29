@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 dotenv_path = join(dirname(__file__), 'dictionary.env')
 load_dotenv(dotenv_path)
 
-token = os.environ['DICTIONARY_KEY']
+token = os.getenv['DICTIONARY_KEY']
 
 def clear():
     command = 'clear'
